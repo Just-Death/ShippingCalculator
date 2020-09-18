@@ -1,0 +1,2 @@
+rootProject.name='Shipping Calculator'
+include ':app'
