@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity {
                 if (weightInputNum >=17){
                     if (weightInputNum > 30) {
                         baseCost = 4.0;
-                        baseCostNum.setText(String.valueOf(baseCost));
+                        baseCostNum.setText("$" + String.valueOf(baseCost));
                     }
                     addedCost = Math.round(((weightInputNum - 16.0) / 4) * 0.5);
-                    addedCostNum.setText(String.valueOf(addedCost));
-                    totalCostNum.setText(String.valueOf(addedCost+baseCost));
+                    addedCostNum.setText("$" + String.valueOf(addedCost));
+                    totalCostNum.setText("$" + String.valueOf(addedCost+baseCost));
                 } else if (weightInputNum <= 16){
                     baseCost = 3.0;
-                    baseCostNum.setText(String.valueOf(baseCost));
-                    addedCostNum.setText(String.valueOf(0.0));
-                    totalCostNum.setText(String.valueOf(baseCost));
+                    baseCostNum.setText("$" + String.valueOf(baseCost));
+                    addedCostNum.setText("$" + String.valueOf(0.0));
+                    totalCostNum.setText("$" + String.valueOf(baseCost));
                 }
 
                 return true;
